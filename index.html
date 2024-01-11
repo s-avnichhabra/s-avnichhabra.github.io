@@ -3,6 +3,40 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+/* Style: Navigation Bar*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Style: Main Image*/
 .container {
   position: relative;
   text-align: center;
@@ -46,10 +80,8 @@
 .column {
   float: left;
   width: 23%;
-  padding: 50px;
-  height: 300px; /* Should be removed. Only for demonstration */
-  column-rule: 4px double #ff00ff;
-column-gap: 50px;
+  padding: 14px;
+  height: 500px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -59,32 +91,133 @@ column-gap: 50px;
   clear: both;
 }
 
+/* Style: Bulleted List*/
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+  font-size: 20px;
+  font-family:verdana
+}
+
+/* Style: Button*/
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #000000;
+}
+.button:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Style: Paragraph*/
+p {
+  font-size: 20px;
+
+}
+
+/* Style: hyperlinks*/
+a:link {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+  font-size:25px;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 </style>
 </head>
 <body>
 
+<!--Navigation Bar--> 
+<div class="topnav">
+  <a class="WebMaster.html" href="#home">Home</a>
+  <a href="GreenEnergy.html">Green energy</a>
+  <a href="HomeSolutions.html">Home Solutions</a>
+  <a href="TaxInformation.html">Tax Information</a>
+  <a href="CleanEnergyPractices.html">Clean Energy Practices</a>
+  <a href="#about" class="split">Contact Us</a>
+</div>
+
+<!--Main Image-->
 <div class="container">
-  <img src="Main.jpeg" alt="Snow" width="1450" height="500">
+  <img src="main.jpeg" alt="Snow" width="1480" height="500">
   <div class="centered">Clean and Green Energy</div>
 </div>
 
 
+<!--Four Main Topics-->
 <div class="row">
-  <div class="column" style="background-color:#a10;">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
+  
+  <!--Column 1 - Green Energy Solutions-->
+  <div class="column" style="background-color:LightPink;">
+    <h2>Green Energy</h2>
+    <p>Renewable Energy Sources (Green energy):
+    <ul>
+  	<li>Solar Power</li>
+  	<li>Wind Power</li>
+  	<li>Hydropower</li>
+        <li>Geothermal Energy</li>
+    </ul>
+    <a href="GreenEnergy.html" align="right">Learn More</a>
+    </p>
   </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
+
+
+  <!--Column 2 - Home Solutions-->
+  <div class="column" style="background-color: LightBlue;">
+    <h2>Home Solutions</h2>
+        <p>Overview of various green energy solutions:
+    <ul>
+  	<li>Solar Panels</li>
+  	<li>Wind Turbines</li>
+  	<li>Energy-efficient Aappliances</li>
+    </ul>
+    <a href="HomeSolutions.html" align="right">Learn More</a></p>
   </div>
-  <div class="column" style="background-color:#ccc;">
-    <h2>Column 3</h2>
-    <p>Some text..</p>
+
+  <!--Column 3 - Tax Information-->
+  <div class="column" style="background-color:LightYellow;">
+    <h2>Tax Information</h2>
+    <p>
+    <ul>
+  	<li>Explanation of available tax incentives for adopting green energy.</li>
+  	<li>Step-by-step guide on how homeowners can claim tax rebates.</li>
+  	<li>Links to relevant government resources or forms.</li>
+    </ul>
+    <a href="TaxInformation.html" align="right">Learn More</a></p>
   </div>
-  <div class="column" style="background-color:#ddd;">
-    <h2>Column 4</h2>
-    <p>Some text..</p>
+
+  <!--Column 4 - Clean Energy Practices-->
+  <div class="column" style="background-color:LightGreen;">
+    <h2>Clean Energy Practices</h2>
+    <p>
+    <ul>
+  	<li>Tips for reducing energy consumption at home.</li>
+  	<li>Sustainable living practices, such as composting, water conservation, and eco-friendly habits.</li>
+  	<li>Information on smart home technologies that promote energy efficiency.</li>
+    </ul>
+    <a href="CleanEnergyPractices.html" align="right">Learn More</a></p>
   </div>
 </div>
 
