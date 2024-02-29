@@ -83,6 +83,7 @@ border-radius: 22px;
     text-align: center;
     animation: changeBackground 10s infinite; /* Change background every 10 seconds */
     position: relative;
+    overflow: hidden;
 }
 
 @keyframes changeBackground {
