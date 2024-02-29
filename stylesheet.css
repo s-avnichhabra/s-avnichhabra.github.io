@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    flex-wrap: wrap;
 }
 
 .top-bar img {
@@ -48,6 +48,9 @@ border-radius: 22px;
     color: white;
     text-align: center;
     padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .additional-bar a {
     color: white;
@@ -132,6 +135,8 @@ footer {
     overflow: hidden; /* Ensure border-radius applies properly */
     margin: 8px;
     transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .image-text-section:hover {
@@ -139,8 +144,8 @@ footer {
 }
 
 .image-text-section img {
-    width: 433px;
-    height: 403px;
+    width: 100%;
+    height: auto;
     border-radius: 10px 10px 0 0; /* Apply border-radius only to top corners */
 }
 
@@ -173,4 +178,11 @@ footer {
 
 .image-text-section button:hover {
     background-color: var(--secondary-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .image-text-section {
+        width: 100%;
+    }
 }
