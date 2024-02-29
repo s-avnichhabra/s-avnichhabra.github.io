@@ -185,4 +185,7 @@ footer {
     .image-text-section {
         width: 100%;
     }
+    .header-section {
+        height: fit-content;
+    }
 }
