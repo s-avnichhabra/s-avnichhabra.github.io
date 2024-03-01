@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+	img {
+ 	 border: 5px solid #555;
+	}
+        /* Color Scheme */
+        :root {
+            --primary-color: #4CAF50; /* Green */
+            --secondary-color: #ff6f00; /* Orange */
+            --background-color: #f7f7f7; /* Light Gray */
+            --text-color: #333; /* Dark Gray */
+        }
+
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        /* Top Bar Styles */
+        .top-bar {
+            background-color: var(--primary-color);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        .top-bar a:hover {
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+        }
+
+        /* Header Styles */
+        .header-section {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px; /* Adjust as needed */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            animation: changeBackground 10s infinite; /* Change background every 10 seconds */
+            position: relative;
+        }
+
+        @keyframes changeBackground {
+            0% { background-image: url('https://www.purdueglobal.edu/blog/student-life/sustainability-resources.jpg'); }
+            50% { background-image: url('https://greentumble.com/wp-content/uploads/2016/12/being-green.jpg'); }
+            100% { background-image: url('https://www.purdueglobal.edu/blog/student-life/sustainability-resources.jpg'); }
+        }
+
+        .header-content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 80%;
+        }
+
+        .header-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header-content p {
+            font-size: 1.2em;
+        }
+
+        /* Image and Text Section Styles */
+        .image-text-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-text-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .image-text-section img {
+            width: 40%; /* Adjust as needed */
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .image-text-section .text-content {
+            width: 50%;
+            padding: 0 20px;
+        }
+
+        .image-text-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .image-text-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .image-text-section button {
+            padding: 10px 20px;
+            font-size: 1.1em;
+            background-color: var(--primary-color);
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .image-text-section button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* FAQ Section Styles */
+        .faq-section {
+            padding: 20px;
+            background-color: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="#">Home</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Authors/Sources</a>
+    </div>
+
+    <div class="header-section">
+        <div class="header-content">
+            <h1>Your Website Title</h1>
+            <p>Short Description Here</p>
+        </div>
+    </div>
+
+    <div class="image-text-section">
+        <img src="https://www.checkatrade.com/blog/wp-content/uploads/2021/10/Feature-green-home-energy-solutions.jpg">
+        <div class="text-content">
+            <h2>All About Green Energy</h2>
+            <p>Green energy, derived from renewable sources, offers a sustainable alternative to conventional fossil fuels. Solar power harnesses sunlight through photovoltaic cells, while wind power utilizes the kinetic energy of the wind via turbines. </p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+    <div class="image-text-section">
+        <img src="" alt="Image 2">
+        <div class="text-content">
+            <h2>Home Solutions</h2>
+            <p>Overview of various green energy solutions (solar panels, wind turbines, energy-efficient appliances, etc.). Detailed information on each solution, including how it works and its benefits. Cost breakdown for each solution, installation considerations, and potential savings.
+</p>
+            <button>Read More</button>
+        </div>
+    </div>
+    <div class="image-text-section">
+        <img src="" alt="Image 1">
+        <div class="text-content">
+            <h2>Tax Rebates Information</h2>
+            <p>Description 1</p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+    <div class="image-text-section">
+        <img src="" alt="Image 2">
+        <div class="text-content">
+            <h2>Clean Energy Practices</h2>
+            <p>Description 2</p>
+            <button>Read More</button>
+        </div>
+    </div>
+    <!-- Repeat the above two sections two more times, alternating image/text positions -->
+
+    <div class="faq-section">
+        <h2>FAQs</h2>
+        <!-- Add your FAQs here -->
+    </div>
+</body>
+</html>
