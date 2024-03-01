@@ -18,7 +18,7 @@
             color: var(--text-color);
             line-height: 1.6;
         }
-        
+
         .no-wrap {
             white-space: nowrap;
         }
@@ -28,7 +28,7 @@
             padding: 10px 20px;
             display: inline-flex;
             justify-content: space-between;
-            overflow-wrap: anywhere; 
+            overflow-wrap: anywhere;
             align-items: center;
             position: fixed;
             width: 98%;
@@ -54,6 +54,10 @@
             border-radius: 5px;
         }
 
+        .top-bar a.active-page {
+            background-color: #0D4D00;
+        }
+
         .additional-bar {
             background-color: #0D4D00;
             /* Green */
@@ -70,6 +74,10 @@
             color: white;
             text-decoration: none;
             padding: 10px;
+        }
+
+        .additional-bar a.active-page {
+            background-color: #AFE1AF;
         }
 
 
@@ -100,8 +108,8 @@
             animation: changeBackground 10s infinite;
             /* Change background every 10 seconds */
             position: relative;
-            margin-top: 120px;  
-            overflow: hidden;          
+            margin-top: 120px;
+            overflow: hidden;
         }
 
         @keyframes changeBackground {
