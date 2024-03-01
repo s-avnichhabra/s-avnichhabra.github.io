@@ -18,6 +18,11 @@
             color: var(--text-color);
             line-height: 1.6;
         }
+        
+        li::marker {
+            font-size: 1.5rem;
+            color: green;
+        }
 
         .no-wrap {
             white-space: nowrap;
